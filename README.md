@@ -115,6 +115,6 @@ If you use TestWise in your teaching or research, please cite it as:
 
 ## Related resources
 
-- [Original blog post](https://corpling.hypotheses.org) introducing the first version of the app
+- [Original blog post](https://corpling.hypotheses.org/5113) introducing the first version of the app
 - [First version of the app](https://github.com/GuillaumeDesa/chisq-fisher-viz) (superseded)
 - Desagulier, G. (2017). *Corpus Linguistics and Statistics with R*. Springer. — Chapter 8 covers hypothesis testing in detail.
