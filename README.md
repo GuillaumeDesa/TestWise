@@ -85,7 +85,7 @@ The mosaic plot displayed when Fisher's exact test is used is a general-purpose 
 
 ## Licence
 
-This work © 2025 Guillaume Desagulier is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+This work © 2026 Guillaume Desagulier is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 You are free to use, share, and adapt this app for non-commercial purposes, provided you give appropriate credit.
 
