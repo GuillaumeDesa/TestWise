@@ -1,6 +1,6 @@
 # TestWise
 
-**TestWise** is a Shiny app that helps linguistics students run χ² and Fisher's exact tests of independence on contingency tables — without writing a single line of R code.
+**TestWise** is a Shiny app that helps linguistics students run χ² and Fisher's exact tests of independence on contingency tables without writing a single line of R code.
 
 It automatically selects the appropriate test based on the structure of the data, generates publication-quality visualisations, computes effect size, and exports results as a formatted HTML report or a high-resolution PNG. An in-app glossary explains every statistical concept along the way.
 
