@@ -109,7 +109,7 @@ You are free to use, share, and adapt this app for non-commercial purposes, prov
 
 If you use TestWise in your teaching or research, please cite it as:
 
-> Desagulier, G. (*2025*). *TestWise: a Shiny app for χ² and Fisher's exact tests of independence*. Université Bordeaux Montaigne. https://github.com/GuillaumeDesa/TestWise
+> Desagulier, G. (*2026*). *TestWise: a Shiny app for χ² and Fisher's exact tests of independence*. Université Bordeaux Montaigne. https://github.com/GuillaumeDesa/TestWise
 
 ---
 
