@@ -1,7 +1,7 @@
 # =============================================================================
 # TestWise — χ² / Fisher's Exact Test of Independence
 # Author: Guillaume Desagulier, Université Bordeaux Montaigne
-# GitHub: https://github.com/GuillaumeDesa/chisq-fisher-viz
+# GitHub: https://github.com/GuillaumeDesa/TestWise
 # License: CC BY-NC 4.0
 # =============================================================================
 
@@ -139,8 +139,13 @@ ui <- fluidPage(
         margin-top: 20px;
         padding-top: 10px;
         border-top: 1px solid #dee2e6;
+        overflow: hidden;
+        position: relative;
       }
       .app-footer a { color: #2980b9; }
+
+      /* ── Tab content padding ── */
+      .tab-content { padding-top: 16px; }
 
     "))
   ),
@@ -196,14 +201,10 @@ ui <- fluidPage(
 
       # Footer
       div(class = "app-footer",
-        HTML(paste0(
-          "© ", current_year, " Guillaume Desagulier — ",
-          "<a href='https://creativecommons.org/licenses/by-nc/4.0/' target='_blank'>CC BY-NC 4.0</a><br>",
-          "<a href='https://github.com/GuillaumeDesa/chisq-fisher-viz' target='_blank'>",
-          "<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='currentColor'>",
-          "<path d='M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z'/>",
-          "</svg> GitHub repository"
-        ))
+        p(HTML(paste0("© ", current_year, " Guillaume Desagulier — ",
+          "<a href='https://creativecommons.org/licenses/by-nc/4.0/' target='_blank'>CC BY-NC 4.0</a>"
+        ))),
+        p(HTML("<a href='https://github.com/GuillaumeDesa/chisq-fisher-viz' target='_blank'>GitHub repository</a>"))
       )
     ), # end sidebarPanel
 
@@ -213,20 +214,17 @@ ui <- fluidPage(
       tabsetPanel(id = "main_tabs",
 
         # ── Tab 1: Data preview ─────────────────────────────────────────────
-        tabPanel("Data preview", icon = icon("table"),
-          br(),
+        tabPanel("Data preview",
           uiOutput("data_preview_ui")
         ),
 
         # ── Tab 2: Results ──────────────────────────────────────────────────
-        tabPanel("Results", icon = icon("chart-bar"),
-          br(),
+        tabPanel("Results",
           uiOutput("results_ui")
         ),
 
         # ── Tab 3: About ────────────────────────────────────────────────────
-        tabPanel("About this app", icon = icon("circle-info"),
-          br(),
+        tabPanel("About this app",
           div(class = "about-section",
 
             h4("What does this app do?"),
@@ -333,7 +331,7 @@ ui <- fluidPage(
                to give linguistics students access to principled, automatic statistical
                testing without requiring prior R knowledge. The source code is fully
                commented and available on ",
-              tags$a("GitHub", href = "https://github.com/GuillaumeDesa/chisq-fisher-viz",
+              tags$a("GitHub", href = "https://github.com/GuillaumeDesa/TestWise",
                      target = "_blank"), " under a CC BY-NC 4.0 licence."),
             p("If you are curious about the statistics behind these tests, a good
                starting point is Chapter 8 of ",
@@ -364,7 +362,7 @@ server <- function(input, output, session) {
 
   # Switch to Data preview tab when a file is uploaded
   observeEvent(input$file, {
-    updateTabsetPanel(session, "main_tabs", selected = "Data preview")
+    updateTabsetPanel(session, "main_tabs", selected = "Preview")
   })
 
   # ── Data preview ────────────────────────────────────────────────────────────
