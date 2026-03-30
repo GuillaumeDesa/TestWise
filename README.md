@@ -6,9 +6,7 @@ It automatically selects the appropriate test based on the structure of the data
 
 TestWise was developed by [Guillaume Desagulier](https://github.com/GuillaumeDesa) (Université Bordeaux Montaigne) for use in linguistics courses where students have limited statistical and programming backgrounds. The source code is fully commented and intended to be read alongside the app.
 
-> This is the second, definitive version of the app. The original version is available at [chisq-fisher-viz](https://github.com/GuillaumeDesa/chisq-fisher-viz).
-
----
+The previous version is available at [chisq-fisher-viz](https://github.com/GuillaumeDesa/chisq-fisher-viz).
 
 ## What the app does
 
@@ -19,8 +17,6 @@ TestWise takes a contingency table as input and:
 3. **Reports the p-value with an interpretation** calibrated to the chosen significance level α (configurable, default 0.05).
 4. **Computes Cramér's V** (χ² test only) with a plain-English label (weak / moderate / strong), because a p-value alone does not tell you how strong an association is.
 5. **Exports results** as a formatted HTML report and/or a 300 DPI PNG of the plot.
-
----
 
 ## How to run it
 
@@ -40,8 +36,6 @@ Replace `"path/to/"` with the folder where you saved the file.
 
 **First run only:** missing packages are installed automatically. This may take a minute or two.
 
----
-
 ## Input format
 
 TestWise accepts contingency tables in the following formats:
@@ -53,8 +47,6 @@ TestWise accepts contingency tables in the following formats:
 | Tab-separated | `.txt` | First column must be row labels |
 
 In all cases, the **first row** must contain column headers and the **first column** must contain row labels. All data cells must be non-negative integer counts.
-
----
 
 ## Dependencies
 
@@ -74,8 +66,6 @@ All packages are installed automatically on first run if not already present.
 
 R version 4.1 or later is recommended.
 
----
-
 ## Features at a glance
 
 - **Data preview tab** — inspect your uploaded table before running the analysis
@@ -89,17 +79,13 @@ R version 4.1 or later is recommended.
 - **HTML report export** — styled, table-formatted, includes effect size
 - **PNG plot export** — 300 DPI, user-controlled dimensions
 
----
-
 ## A note on the mosaic plot
 
 The mosaic plot displayed when Fisher's exact test is used is a general-purpose visualisation tool, not a statistical companion specifically designed for Fisher's test. The association plot, by contrast, was designed to display Pearson residuals from the χ² test and has a tighter statistical justification. The mosaic plot is used here because it gives a clear visual impression of cell frequencies and is immediately readable. A heatmap or a bar chart of proportions would be equally valid alternatives. The key results to focus on are always the **p-value** and the **frequency tables**.
 
----
-
 ## Licence
 
-This work © 2025 Guillaume Desagulier is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+This work © 2026 Guillaume Desagulier is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 You are free to use, share, and adapt this app for non-commercial purposes, provided you give appropriate credit.
 
@@ -110,8 +96,6 @@ You are free to use, share, and adapt this app for non-commercial purposes, prov
 If you use TestWise in your teaching or research, please cite it as:
 
 > Desagulier, G. (*2026*). *TestWise: a Shiny app for χ² and Fisher's exact tests of independence*. Université Bordeaux Montaigne. https://github.com/GuillaumeDesa/TestWise
-
----
 
 ## Related resources
 
