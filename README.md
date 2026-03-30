@@ -4,7 +4,7 @@
 
 It automatically selects the appropriate test based on the structure of the data, generates publication-quality visualisations, computes effect size, and exports results as a formatted HTML report or a high-resolution PNG. An in-app glossary explains every statistical concept along the way.
 
-TestWise was developed by [Guillaume Desagulier](https://github.com/GuillaumeDesa) (Université Bordeaux Montaigne) for use in linguistics courses where students have limited statistical and programming backgrounds. The source code is fully commented and intended to be read alongside the app.
+TestWise was developed for use in linguistics courses where students have limited statistical and programming backgrounds. The source code is fully commented and intended to be read alongside the app.
 
 The previous version is available at [chisq-fisher-viz](https://github.com/GuillaumeDesa/chisq-fisher-viz).
 
