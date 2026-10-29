@@ -6,7 +6,7 @@
 # =============================================================================
 
 # --- Required libraries ------------------------------------------------------
-packages <- c("shiny", "openxlsx", "ggplot2", "shinycssloaders",
+# packages <- c("shiny", "openxlsx", "ggplot2", "shinycssloaders",
               "vcd", "rmarkdown", "shinyBS", "knitr", "kableExtra")
 # for (pkg in packages) {
 #   if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
@@ -14,6 +14,16 @@ packages <- c("shiny", "openxlsx", "ggplot2", "shinycssloaders",
 #     library(pkg, character.only = TRUE)
 #   }
 # }
+
+library(shiny)
+library(openxlsx)
+library(ggplot2)
+library(shinycssloaders)
+library(vcd)
+library(rmarkdown)
+library(shinyBS)
+library(knitr)
+library(kableExtra)
 
 # Dynamic copyright year
 current_year <- format(Sys.Date(), "%Y")
