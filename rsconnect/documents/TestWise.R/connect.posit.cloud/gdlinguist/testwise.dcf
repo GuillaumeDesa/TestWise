@@ -1,0 +1,12 @@
+name: testwise
+title: TestWise
+username: gdlinguist
+account: gdlinguist
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 01a186f4-467c-e653-b11f-41d2ca01d7b8
+bundleId:
+url: https://connect.posit.cloud/gdlinguist/content/01a186f4-467c-e653-b11f-41d2ca01d7b8
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
