@@ -8,12 +8,12 @@
 # --- Required libraries ------------------------------------------------------
 packages <- c("shiny", "openxlsx", "ggplot2", "shinycssloaders",
               "vcd", "rmarkdown", "shinyBS", "knitr", "kableExtra")
-for (pkg in packages) {
-  if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
-    install.packages(pkg)
-    library(pkg, character.only = TRUE)
-  }
-}
+# for (pkg in packages) {
+#   if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+#     install.packages(pkg)
+#     library(pkg, character.only = TRUE)
+#   }
+# }
 
 # Dynamic copyright year
 current_year <- format(Sys.Date(), "%Y")
