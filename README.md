@@ -29,7 +29,7 @@ TestWise takes a contingency table as input and:
 ### Option 2 — R console
 
 ```r
-shiny::runApp("path/to/testwise.R")
+shiny::runApp("path/to/app.R")
 ```
 
 Replace `"path/to/"` with the folder where you saved the file.
